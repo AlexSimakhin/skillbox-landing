@@ -24,8 +24,12 @@
       &:nth-last-child(1) {
         margin-right: 0;
       }
-    }
 
+      a {
+        font-size: 18px;
+        font-weight: 700;
+      }
+    }
   }
 
   .contacts {
@@ -41,11 +45,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 260px;
-      height: 58px;
-      margin-left: 32px;
+      width: 200px;
+      height: 40px;
+      margin-left: 40px;
       background: $white;
-      border: 1px solid $black;
+      border: 2px solid $black;
       border-radius: 10px;
     }
   }

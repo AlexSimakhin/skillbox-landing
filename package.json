@@ -1,8 +1,11 @@
 {
-  "name": "create-html-boilerplate",
-  "version": "1.3.1",
-  "description": "create-html-boilerplate",
+  "homepage": "https://alexsimakhin.github.io/skillbox-landing", 
+  "name": "skillbox-landing",
+  "version": "0.0.2",
+  "description": "skillbox-landing",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "stylelint": "stylelint \"source/scss/**/*.(scss|css)\"",
     "eslint": "eslint \"source/js/**/*.js\"",
     "test": "concurrently npm:stylelint npm:eslint",

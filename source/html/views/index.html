@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="format-detection" content="telephone=no" />
-    <meta name="description" content="HTML5 webpack boilerplate" />
-    <title>HTML5 webpack boilerplate</title>
+    <meta name="description" content="Fast landing page creation" />
+    <title>Aleksandr Simakhin — Landing Page</title>
     <link rel="stylesheet" href="/vendors/normalize-css/normalize.min.css" />
     <script>
       if(!window.HTMLPictureElement) {
@@ -14,13 +14,16 @@
     </script>
   </head>
   <body>
-    <!--header.html-->
+    <%= _.template(require('../includes/index/pop-container.html').default)({}) %>
     <%= _.template(require('../includes/common/header.html').default)({}) %>
+
     <main>
-      <!--index/hero.html-->
       <%= _.template(require('../includes/index/about-me.html').default)({}) %>
+      <%= _.template(require('../includes/index/my-work.html').default)({}) %>
+      <%= _.template(require('../includes/index/work-examples.html').default)({}) %>
+      <%= _.template(require('../includes/index/afterword.html').default)({}) %>
     </main>
-    <!--footer.html-->
+
     <%= _.template(require('../includes/common/footer.html').default)({}) %>
   </body>
 </html>
