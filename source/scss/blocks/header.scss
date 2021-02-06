@@ -1,4 +1,52 @@
 .header {
-  background-color: $white;
+  display: flex;
+  height: 140px;
   margin: 0;
+  background-color: $white;
+  align-items: center;
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 300px;
+
+    li {
+      margin-right: 24px;
+
+      &:nth-last-child(1) {
+        margin-right: 0;
+      }
+    }
+
+  }
+
+  .contacts {
+    display: flex;
+    align-items: center;
+
+    .contacts__tel-number {
+      color: $black;
+      font-weight: 700;
+    }
+
+    .contacts__tel-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 260px;
+      height: 58px;
+      margin-left: 32px;
+      background: $white;
+      border: 1px solid $black;
+      border-radius: 10px;
+    }
+  }
 }
